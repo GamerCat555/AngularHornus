@@ -1,0 +1,20 @@
+<div class="product-row">
+  <div id="main">
+    <app-product-new-image [product]="product"></app-product-new-image>
+    <div class="product-info">
+      <div class="header"> {{product.name}}</div>
+      <div class="meta">
+        <div class="product-sku">
+            {{product.sku}}
+        </div>
+        <app-product-departement  [ProductCom]="product"></app-product-departement>
+      </div>
+      <div>
+          {{product.description}}
+      </div>
+    </div>
+    <div class="price-display">
+        <app-price-display  [productP]="product"></app-price-display>
+    </div>
+  </div>
+</div>

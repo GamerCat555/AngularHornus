@@ -1,0 +1,14 @@
+<div class="ui raised segment">
+  <h2 class="ui header">Login Form</h2>
+  <form #f="ngForm" (submit)="submitForm(f.value)" class="ui form">
+    <div class="field">
+      <label for="loginInput">Login:</label>
+      <input type="text" id="loginInput" placeholder="login" name="login" ngModel>
+    </div>
+    <div class="field">
+      <label for="passwordInput">password:</label>
+      <input type="text" id="passwordInput" placeholder="password" name="password" value="coucou" ngModel>
+    </div>
+    <button type="submit" class="ui button">submit</button>
+  </form>
+</div>

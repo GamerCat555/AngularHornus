@@ -1,0 +1,11 @@
+<div style="text-align:left">
+  <h1>
+    {{title}}!
+  </h1>
+</div>
+<div class="ui three item menu">
+<a [routerLink]="['/home']" class="item">Home</a>
+<a [routerLink]="['/character']" class="item">Personnage</a>
+<a [routerLink]="['/shop']" class="item">Magasin</a>
+</div>
+<router-outlet></router-outlet>

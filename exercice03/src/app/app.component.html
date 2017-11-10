@@ -1,0 +1,10 @@
+<!--The content below is only a placeholder and can be replaced.-->
+<div  style="text-align:left">
+  <h1 class="entete">{{title}}!</h1>
+</div>
+<div class="ui main text container">
+  <app-product-list [productList]="product" (onProductSelected)="productChanged($event)"></app-product-list>
+  <app-cart-price [kartProducts]="kartProducts"></app-cart-price>
+</div>
+
+

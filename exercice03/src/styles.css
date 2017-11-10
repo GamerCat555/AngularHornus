@@ -1,0 +1,88 @@
+/* You can add global styles to this file, and also import other style files */
+@import './assets/semantic.min.css';
+.ui.main.text.container {
+    margin-top:5%;
+}
+
+h1{
+    border-bottom:3px solid black;
+}
+
+
+.ui.menu .item img.logo {
+    margin-right: 1.5em;
+}
+
+.ui.items>.item {
+  border: 1px solid rgba(255, 255, 255, 0.0);
+  border-radius: 5px;
+}
+
+.ui.items>.item.selected {
+  border: 1px solid rgba(163, 51, 200, 0.41);
+  border-radius: 5px;
+}
+
+.ui.items>.item>.content>.header {
+    padding-top: 1em;
+}
+
+.products-list {
+  border-top: 1px solid black;
+  border-left: 1px solid black;
+  border-right: 1px solid black;
+}
+
+.product-row {
+  border-bottom: 1px solid black;
+}
+
+.product-image {
+  float: center;
+}
+
+.product-info {
+  padding: 30px;
+  float: left;
+}
+
+.price-display {
+  float: right;
+}
+
+.product-image {
+  width: 100px;
+  height: 100px;
+  padding: 20px;
+}
+
+.cf:before,
+.cf:after {
+    content: " "; /* 1 */
+    display: table; /* 2 */
+}
+
+.cf:after {
+    clear: both;
+}
+
+cf {
+    *zoom: 1;
+}
+
+#main {
+  width: 100%;
+  height: 100%;
+  border: 1px solid black; 
+  display: -webkit-flex; /* Safari */
+  -webkit-align-items: center; /* Safari 7.0+ */
+  display: flex;
+  align-items: center;
+}
+
+#main div {
+ -webkit-flex: 1; /* Safari 6.1+ */
+ flex: 1;
+}
+
+

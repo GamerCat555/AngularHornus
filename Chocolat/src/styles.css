@@ -1,0 +1,14 @@
+/* You can add global styles to this file, and also import other style file */
+@import './assets/semantic.min.css';
+
+.ui.form{
+    margin-left: 30%;
+    margin-top: 5%;
+    padding: 20px;
+    width: 300px;
+    border: solid 1px;
+}
+
+.forms{
+    margin-left: 30%;
+}

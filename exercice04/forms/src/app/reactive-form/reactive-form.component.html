@@ -1,0 +1,25 @@
+<div *ngIf="isLoggedIn">
+  <h1>salut</h1>
+  <input ng-keyup="search($event)" />
+</div>
+<div  *ngIf="!isLoggedIn" class="ui raised segment">
+  <h2 class="ui header">Login Form</h2>
+  <form [formGroup]="myForm" class="ui form" 
+        (ngSubmit)="onSubmit(myForm.value)"
+        [class.error]="!myForm.valid && myForm.touched">
+    <div class="field">
+      <label for="loginInput">Login:</label>
+      <input type="text" id="loginInput" placeholder="login" name="login" [formControl]="myForm.controls['login']">
+      <div *ngIf="!login.valid && login.touched  " class="ui error message" >Login empty</div>
+      <div *ngIf="!login.hasError('minlength') || !login.hasError('maxlength')   " class="ui error message" >Login d</div>
+    </div>
+    <div class="field">
+      <label for="passwordInput">password:</label>
+      <input type="text" id="passwordInput" placeholder="password" name="password" [formControl]="myForm.controls['password']">
+      <div *ngIf="!password.valid && password.touched" class="ui error message ">Password is invalid</div>
+      <div *ngIf="password.hasError('invalidPassword')" class="ui error message ">Password must follow the rules</div>
+    </div>
+    <div *ngIf="!login.valid" class="ui error message">form false</div>
+    <button type="submit" class="ui button">submit</button>
+  </form>
+</div>

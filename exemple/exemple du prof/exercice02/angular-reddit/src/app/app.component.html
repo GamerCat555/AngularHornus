@@ -1,0 +1,16 @@
+<form class="ui form segment">
+    <h3 class="ui header">Add a link</h3>
+    <div class="field">
+      <label>Title:</label>
+      <input type="text" name="Title" placeholder="Title" #title>
+    </div>
+    <div class="field">
+      <label>Link:</label>
+      <input type="text" name="link" placeholder="Link" #link>
+    </div>
+    <button (click)="addArticle(title,link)" class="ui button" type="submit">Submit</button>
+    <br/>
+  </form>
+  <div class="ui grid posts">
+    <app-article class="row" *ngFor="let article of sortedArticles()" [article]="article" ></app-article>
+</div>

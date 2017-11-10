@@ -1,0 +1,4 @@
+<div class="inventory-app">
+  <app-product-list [productList]="products" (onProductSelected)="productChanged($event)" ></app-product-list>
+  <app-cart-price [kartProducts]="kartProducts"></app-cart-price>
+</div>
